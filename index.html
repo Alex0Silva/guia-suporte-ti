@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Guia de Suporte e Redes</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Guia Básico de Suporte e Redes</h1>
+
+<p>Projeto de estudo de suporte técnico e redes</p>
+
+<p>Acesse as opções abaixo para aprender comandos e procedimentos básicos.</p>
+
+</header>
+
+<section class="menu">
+
+<button onclick="mostrar('ip')">Configurar IP</button>
+
+<button onclick="mostrar('ping')">Testar Conexão</button>
+
+<button onclick="mostrar('tracert')">Ver rota da conexão</button>
+
+<button onclick="mostrar('formatar')">Formatar PC</button>
+
+<button onclick="mostrar('linux')">Instalar Linux</button>
+
+</section>
+
+<section id="conteudo">
+
+<div id="ip" class="guia">
+
+<h2>Configurar / Verificar IP</h2>
+
+<p>Abra o Prompt de Comando e digite:</p>
+
+<code>ipconfig</code>
+
+<p>Esse comando mostra:</p>
+
+<ul>
+<li>Endereço IP</li>
+<li>Máscara de sub-rede</li>
+<li>Gateway padrão</li>
+</ul>
+
+<img src="Configuração de rede no prompt de comando.png">
+
+</div>
+
+
+<div id="ping" class="guia">
+
+<h2>Testar Conexão</h2>
+
+<p>Para testar se a internet está funcionando digite:</p>
+
+<code>ping 8.8.8.8</code>
+
+<p>Se aparecer resposta significa que a conexão está funcionando.</p>
+
+<img src="Teste de ping no Prompt de Comando.png">
+
+</div>
+
+
+<div id="tracert" class="guia">
+
+<h2>Ver rota da conexão</h2>
+
+<p>Digite o comando:</p>
+
+<code>tracert google.com</code>
+
+<p>Esse comando mostra por quais servidores sua conexão passa até chegar ao destino.</p>
+
+<img src="tracert.png">
+
+</div>
+
+
+<div id="formatar" class="guia">
+
+<h2>Formatar um computador</h2>
+
+<ol>
+
+<li>Criar pendrive bootável</li>
+
+<li>Entrar na BIOS</li>
+
+<li>Selecionar boot pelo USB</li>
+
+<li>Instalar o sistema operacional</li>
+
+</ol>
+
+</div>
+
+
+<div id="linux" class="guia">
+
+<h2>Instalar Linux</h2>
+
+<p>Exemplo usando Ubuntu:</p>
+
+<ol>
+
+<li>Baixar a ISO do Ubuntu</li>
+
+<li>Criar pendrive bootável</li>
+
+<li>Iniciar o computador pelo USB</li>
+
+<li>Seguir os passos da instalação</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
